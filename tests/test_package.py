@@ -62,7 +62,7 @@ class PackageTests(unittest.TestCase):
             with patch.dict(os.environ, {'FLEXSIM_MCP_SETTINGS': str(Path(temp) / 'missing.json'),
                                         'FLEXSIM_COMPANION_DIR': str(companion)}, clear=True):
                 launcher.configure()
-                self.assertEqual(Path(os.environ['FLEXSIM_MCP_RUNTIME_DIR']), Path(temp) / 'flexsim-mcp/runtime')
+                self.assertEqual(Path(os.environ['FLEXSIM_MCP_RUNTIME_DIR']), Path(temp).resolve() / 'flexsim-mcp/runtime')
 
     def test_invalid_settings_fail_cleanly_without_protocol_output(self):
         with tempfile.TemporaryDirectory() as temp:
