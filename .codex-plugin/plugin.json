@@ -1,0 +1,20 @@
+{
+  "name": "flexsim-mcp",
+  "version": "1.1.1",
+  "description": "Automate local FlexSim on Windows through MCP: open models, execute verified UTF-8 FlexScript, save with backups, and read CSV results.",
+  "mcpServers": "./.mcp.json",
+  "requires_local_executor": true,
+  "author": {"name": "w2cemm"},
+  "homepage": "https://github.com/w2cemm/flexsim-mcp",
+  "repository": "https://github.com/w2cemm/flexsim-mcp",
+  "keywords": ["flexsim", "simulation", "mcp", "windows", "flexscript"],
+  "interface": {
+    "displayName": "FlexSim MCP",
+    "developerName": "w2cemm",
+    "shortDescription": "在 Windows 上运行 FlexSim 脚本和保存模型",
+    "longDescription": "通过本机 companion 操作 FlexSim，验证脚本完成标记，保存模型前防止意外覆盖，并读取仿真导出的 CSV。需要 Windows、Python 和单独安装的 FlexSim。",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write", "Interactive"],
+    "defaultPrompt": ["检查 FlexSim 和 companion 状态", "运行 FlexScript 并验证完成", "保存当前 FlexSim 模型并校验文件"]
+  }
+}

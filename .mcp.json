@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "flexsim": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["${PLUGIN_ROOT}/scripts/launch.py"],
+      "cwd": "${PLUGIN_ROOT}"
+    }
+  }
+}
