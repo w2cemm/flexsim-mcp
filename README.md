@@ -2,6 +2,8 @@
 
 通过标准 MCP stdio 协议在 Windows 上操作本机 FlexSim：打开模型、运行 FlexScript、保存模型和读取 CSV 仿真结果。支持 Codex 插件安装，也可作为独立 MCP 服务使用。
 
+本仓库采用 [MIT 许可证](LICENSE) 开源，允许使用、修改和分发，须保留版权与许可声明。FlexSim 本体及其他依赖遵循各自许可。DSH 独立版本位于 [dsh-flexsim-mcp](https://github.com/w2cemm/dsh-flexsim-mcp)。
+
 ## 环境
 
 - Windows 10/11，Python 3.10+（标准库，无 pip 依赖）。
